@@ -66,6 +66,16 @@ module.exports = {
         }
       }
     }
+  },
+
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'about-pt',
+        path: '/sobre',
+        component: resolve(__dirname, 'pages/about.vue')
+      })
+    }
   }
 }
 
