@@ -4,6 +4,11 @@ module.exports = {
   */
   head: {
     title: 'nuxt-vue',
+    titleTemplate: '%s - Main Name!',
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,6 +46,10 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth'
+  ],
+
+  serverMiddleware: [
+    '~/servermiddleware/seo.js'
   ],
 
   axios: {

@@ -1,0 +1,5 @@
+[
+  { "from": "/oldprofile", "to": "/profile" },
+  { "from": "/oldindex", "to": "/" },
+  { "from": "/oldabout", "to": "/about" }
+]

@@ -26,6 +26,14 @@ export default {
   },
   asyncData (context) {
     
+  },
+  head () {
+    return {
+      title: 'Index - Nuxt.js',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Index page Nuxt.js ' }
+      ]
+    }
   }
 }
 </script>

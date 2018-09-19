@@ -23,6 +23,23 @@ export default {
   middleware: 'auth',
   computed: {
     ...mapGetters(['loggedInUser'])
+  },
+  head () {
+    let user = this.$store.getters.loggedInUser;
+    
+    return {
+      title: `${user.username} @(${user.email}) - Nuxt.js`,
+      meta: [{
+        hid: `iOSUrl`,
+        property: 'al:ios:url',
+        content: `myapp://user?screen_name=${user.username}`
+      },
+      {
+        hid: `description`,
+        name: 'description',
+        content: `${user.username}'s public profile at Nuxt.js`
+      }]
+    }
   }
 }
 </script>
