@@ -16,14 +16,22 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700'}
+    ],
+    css: [
+      //{ src: 'bulma/bulma.sass', lang: 'sass' },
+      // { src: './assets/scss/main.scss', lang: 'scss' },
+      { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+    ],
+    script: [
+      //{ src: 'https://use.fontawesome.com/releases/v5.1.0/js/all.js' },
+      //{ src: 'node_modules/jquery/dist/jquery.min.js' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#ff6969' },
   /*
   ** Build configuration
   */
@@ -45,7 +53,8 @@ module.exports = {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    ['nuxt-sass-resources-loader', './assets/scss/main.scss']
   ],
 
   serverMiddleware: [

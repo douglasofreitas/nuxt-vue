@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/_all.sass";
+
+$primary: red;
+
+$info: orange;
+$success: green;
+$warning: blue;
+$danger: indigo;
+
+$light: lightgrey;
+$dark: darkgrey;
+$navbar-breakpoint: 414px;
+
+@import "~bulma/bulma";

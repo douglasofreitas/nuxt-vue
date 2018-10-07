@@ -2,6 +2,7 @@
   <div>
     <Snackbar></Snackbar>
     <Navbar></Navbar>
+    
     <nuxt/>
   </div>
 </template>
@@ -9,11 +10,13 @@
 <script>
   import Navbar from '../components/Navbar'
   import Snackbar from '../components/Snackbar'
+  import Menu from '../components/Menu'
 
   export default {
     components: {
       Navbar,
-      Snackbar
+      Snackbar,
+      Menu
     }
   }
 </script>

@@ -8,6 +8,12 @@
   </section>
 </template>
 
+<style lang="scss">
+.title {
+  color: $primary;
+}
+</style>
+
 <script>
 import { mapMutations } from 'vuex'
 
