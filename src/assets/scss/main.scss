@@ -12,3 +12,18 @@ $dark: darkgrey;
 $navbar-breakpoint: 414px;
 
 @import "~bulma/bulma";
+
+html, body, #app {
+    height: 100%;
+}
+#app {
+    min-height: 100%;
+    //display: flex;
+    //flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-toggle:checked + .nav-menu {
+        display: block;
+    }
+}

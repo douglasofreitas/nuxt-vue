@@ -1,9 +1,16 @@
 <template>
-  <div>
+  <div id="app">
     <Snackbar></Snackbar>
     <Navbar></Navbar>
     
-    <nuxt/>
+    <section class="main-content columns is-fullheight">
+      <Menu></Menu>
+      <div class="container column is-10">
+        <nuxt/>
+      </div>      
+    </section>
+    
+    <Footer></Footer>
   </div>
 </template>
 
@@ -11,6 +18,7 @@
   import Navbar from '../components/Navbar'
   import Snackbar from '../components/Snackbar'
   import Menu from '../components/Menu'
+  import Footer from '../components/Footer'
 
   export default {
     components: {
