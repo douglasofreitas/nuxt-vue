@@ -10,6 +10,7 @@ module.exports = {
       amp: undefined
     },
     meta: [
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
@@ -48,8 +49,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    vendor: ['vue-i18n'] // webpack vue-i18n.bundle.js
   },
+
+  plugins: ['~/plugins/i18n.js'], // webpack plugin
 
   modules: [
     '@nuxtjs/axios',
@@ -79,12 +83,13 @@ module.exports = {
 
   router: {
     extendRoutes (routes, resolve) {
-      routes.push({
-        name: 'about-pt',
-        path: '/sobre',
-        component: resolve(__dirname, 'pages/about.vue')
-      })
-    }
+      //routes.push({
+      //  name: 'about-pt',
+      //  path: '/sobre',
+      //  component: resolve(__dirname, 'pages/about.vue')
+      //})
+    },
+    middleware: 'i18n'
   }
 }
 

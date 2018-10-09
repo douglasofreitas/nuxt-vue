@@ -26,6 +26,13 @@
       Snackbar,
       Menu,
       Footer
+    },
+    head () {
+      return {
+	      htmlAttrs: {
+          lang: this.$store.state.locale
+        }
+      }
     }
   }
 </script>

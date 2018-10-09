@@ -50,7 +50,7 @@
           </form>
 
           <div class="has-text-centered" style="margin-top: 20px">
-            Already got an account? <nuxt-link to="/login">Login</nuxt-link>
+            Already got an account? <nuxt-link :to="'/' + $i18n.locale + '/login'">Login</nuxt-link>
           </div>
         </div>
       </div>

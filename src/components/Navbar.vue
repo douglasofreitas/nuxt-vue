@@ -10,9 +10,9 @@
       </div>
       
       <a class="navbar-item" href="/">MySite</a>
-      <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-      <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-      <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
+      <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/about'">About</nuxt-link>
+      <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/about'">About</nuxt-link>
+      <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/about'">About</nuxt-link>
       
     </div>
     <div id="navbarMain" class="navbar-menu">
@@ -22,18 +22,18 @@
             {{ loggedInUser.username }}
           </a>
           <div class="navbar-dropdown">
-            <nuxt-link class="navbar-item" to="/profile">My Profile</nuxt-link>
+            <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/profile'">My Profile</nuxt-link>
             <hr class="navbar-divider">
             <a class="navbar-item">Logout</a>
           </div>
         </div>
-        <nuxt-link class="navbar-item" to="/register" v-if="!isAuthenticated">Register</nuxt-link>
-        <nuxt-link class="navbar-item" to="/login" v-if="!isAuthenticated" >Log In</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/register'" v-if="!isAuthenticated">Register</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/login'" v-if="!isAuthenticated" >Log In</nuxt-link>
         <a class="navbar-item" @click="logout" v-if="isAuthenticated">Logout</a>
-        <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
-        <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-        <nuxt-link class="navbar-item" to="/projects">Projects</nuxt-link>
-        <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/'">Home</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/about'">About</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/projects'">Projects</nuxt-link>
+        <nuxt-link class="navbar-item" :to="'/' + $i18n.locale + '/contact'">Contact</nuxt-link>
       </div>
     </div>
   </nav>

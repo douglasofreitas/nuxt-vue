@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <h1 class="title">Contact Me</h1>
       <p>
-        You can follow me on Twitter: <a href="https://twitter.com/ammezie" target="_blank">@ammezie</a>
+        Send e-mail to 
       </p>
     </div>
   </section>
