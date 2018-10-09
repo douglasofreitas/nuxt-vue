@@ -24,7 +24,8 @@
     components: {
       Navbar,
       Snackbar,
-      Menu
+      Menu,
+      Footer
     }
   }
 </script>

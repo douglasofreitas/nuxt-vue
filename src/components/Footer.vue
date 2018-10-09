@@ -1,6 +1,5 @@
 <template>
-  <footer class="footer">
-    teste
+  <div class="footer">
     <div class="content has-text-centered">
       <p>
         <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
@@ -8,15 +7,15 @@
         is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
       </p>
     </div>
-  </footer>
+  </div>
 </template>
-
-<style lang="scss">
-
-</style>
 
 <script>
 export default {
-
+  data () {
+    return {
+      
+    }
+  },
 }
 </script>
