@@ -45,6 +45,9 @@
   </section>
 </template>
 
+<style lang="scss">
+</style>
+
 <script>
 import Notification from '~/components/Notification'
 

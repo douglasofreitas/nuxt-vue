@@ -21,11 +21,11 @@ module.exports = {
     ],
     css: [
       //{ src: 'bulma/bulma.sass', lang: 'sass' },
-      // { src: './assets/scss/main.scss', lang: 'scss' },
-      { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+      { src: './assets/scss/main.scss', lang: 'scss' },
+      //{ src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
     ],
     script: [
-      //{ src: 'https://use.fontawesome.com/releases/v5.1.0/js/all.js' },
+      //{ src: 'https://use.fontawesome.com/releases/v5.1.0/js/all.js' },   //enable Font Awesome
       //{ src: 'node_modules/jquery/dist/jquery.min.js' }
     ]
   },

@@ -3,8 +3,12 @@
     <div class="container has-text-centered">
       <h1 class="title">Contact Me</h1>
       <p>
-        Send e-mail to 
+        Linkedin: <a href="https://www.linkedin.com/in/douglasofreitas">https://www.linkedin.com/in/douglasofreitas</a> <br/>
+        Github: <a href="https://github.com/douglasofreitas">https://github.com/douglasofreitas</a>
       </p>
     </div>
   </section>
 </template>
+
+<style lang="scss">
+</style>
