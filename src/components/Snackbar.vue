@@ -19,7 +19,6 @@ export default {
       if (msg !== '') {
         this.show = true
         this.message = this.$store.state.snackbar.message 
-        this.$store.commit('snackbar/setMessage', '')
       }
     })
   }

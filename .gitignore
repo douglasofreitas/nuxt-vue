@@ -6,6 +6,10 @@
 
 # Nuxt build
 */.nuxt
+sw.*
 
 # Nuxt generate
 */dist
+
+#Local envonments
+*/.env

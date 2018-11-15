@@ -58,6 +58,8 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth',
+    '@nuxtjs/pwa',
+    ['@nuxtjs/dotenv', { filename: '.env' }],
     ['nuxt-sass-resources-loader', './assets/scss/main.scss']
   ],
 

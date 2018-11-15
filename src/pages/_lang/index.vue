@@ -20,11 +20,11 @@ export default {
   },
   methods: {
     setNewMessage: function (snack) {
-      this.setMessage('Message test')
+      this.setSnackbarMessage('Message test')
       // this.$router.push('/')
     },
     ...mapMutations({
-      setMessage: 'snackbar/setMessage'
+      setSnackbarMessage: 'setSnackbarMessage'
     })
   },
   asyncData (context) {

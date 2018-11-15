@@ -1,5 +1,8 @@
 {
     "about": {
         "title": "Sobre Mim"
+    },
+    "general": {
+        "guest": "Convidado"
     }
 }

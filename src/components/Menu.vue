@@ -23,12 +23,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import $ from 'jquery'
 
 export default {
-  computed: {
-    ...mapGetters(['isAuthenticated', 'loggedInUser'])
+  data () {
+    return {
+      isAuthenticated: this.$store.state.auth.loggedIn,
+      userName: this.$store.state.auth.loggedIn ? this.$store.state.auth.user.first_name : this.$i18n.t('general.guest')
+    }
   },
   methods: {
     async logout() {
