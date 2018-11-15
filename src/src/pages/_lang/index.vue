@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <h1 class="title">Hi, this is Nuxt website</h1>
       <h2 class="subtitle">Use SEO good pratices and differents resources .</h2>
-      <button @click="setNewMessage">COUNTER: {{ this.$store.state.snackbar.counter }}</button>
+      <button @click="setNewMessage">Show message snackbar</button>
     </div>
   </div>
 </template>

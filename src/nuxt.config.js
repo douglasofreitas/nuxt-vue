@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  srcDir: 'src/',
   head: {
     title: 'nuxt-vue',
     titleTemplate: '%s - Main Name!',
